@@ -23,3 +23,17 @@ I started by looking at the different accountnames by using the following query:
 DeviceProcessEvents
 | where DeviceName startswith "nh-"
 
+That returned too many AccountNames so I decided to filter more by the ProcessCommandLine or the FileName to see who could be running commands in a billing account which is told to us by the flag description.
+
+I used the following query where I tried a few names one of which being the answer:
+
+DeviceProcessEvents
+-| where DeviceName startswith "nh-"
+-| where ProcessCommandLine has_any ("billing", "invoice", "payment", "account")
+   -or FileName has_any ("billing", "invoice", "payment")
+-| project Timestamp,
+         - DeviceName,
+         - AccountName,
+         - FileName,
+         - ProcessCommandLine
+<img width="468" height="250" alt="image" src="https://github.com/user-attachments/assets/2948910f-a955-4997-bd52-7a08dbd1f372" />
