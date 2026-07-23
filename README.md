@@ -54,22 +54,8 @@ ChatGPT was able to come up with the query below after I pasted the question as 
 
 After that I pasted the following csv results and it told me that OneDrive cleanup was likely the answer.
 
-[Uploading Flag4.csv…]("TimeGenerated [UTC]",ProcessCommandLine,InitiatingProcessCommandLine,DeviceName
-"3/10/2026, 9:55:52.863 AM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 9:55:52.914 AM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\StandaloneUpdater\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 9:55:52.971 AM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\19.043.0304.0013\amd64""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 9:55:53.016 AM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\19.043.0304.0013""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 11:29:47.552 AM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 11:29:47.622 AM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\StandaloneUpdater\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 11:29:47.856 AM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\21.220.1024.0005\amd64""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 11:29:47.999 AM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\21.220.1024.0005""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/10/2026, 11:33:23.745 AM","""cmd.exe"" ","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/11/2026, 12:42:05.250 PM","""cmd.exe"" ","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/11/2026, 1:48:33.134 PM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\Update\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/11/2026, 1:48:33.167 PM","""cmd.exe"" /q /c del /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\StandaloneUpdater\OneDriveSetup.exe""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/11/2026, 1:48:33.197 PM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\26.026.0209.0004""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-"3/11/2026, 1:48:33.238 PM","""cmd.exe"" /q /c rmdir /s /q ""C:\Users\j.morris\AppData\Local\Microsoft\OneDrive\26.032.0217.0003""","Explorer.EXE","nh-wks-bill-01.corp.nimbushealth.com"
-)
+<img width="1433" height="546" alt="3E45394C-0562-43D9-B5B8-CDB02DC22D53" src="https://github.com/user-attachments/assets/f9d65c93-8263-4eb6-aa3f-90003c1795a2" />
+
 
 Ans: OneDrive cleanup
 
