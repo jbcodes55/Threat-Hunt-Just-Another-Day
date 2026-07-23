@@ -1,4 +1,4 @@
-[Flag4.csv](https://github.com/user-attachments/files/30321540/Flag4.csv)# Threat-Hunt-Just-Another-Day
+# Threat-Hunt-Just-Another-Day
 I completed the "Just-Another-Day" threat hunt in the cyber range.
 
 # Platforms and Tools Used
@@ -59,6 +59,41 @@ After that I pasted the following csv results and it told me that OneDrive clean
 
 Ans: OneDrive cleanup
 
+# Flag 5: Getting Their Bearings
+This flag was pretty simple because it basically was only asking for me to analyze my previous query and find a sequence of answers that the query already produced. I just needed to modify the query slightly and I was able to get the answer.
 
+<img width="468" height="209" alt="image" src="https://github.com/user-attachments/assets/10757b58-a187-4f7e-80fa-1b23bb0d3303" />
+
+Ans: whoami,hostname,net use,net view,net view \\NH-FS-01
+
+# Flag 6: The Named Target
+This flag didn't requie any extra work because the answer from number 5 already provides it. It's asking for the last command of flag 5, which is NH-FS-01/
+
+Ans: NH-FS-01
+
+# Flag 7: Widening the Net
+This flag wants me to find the command that was used by the infiltrator after coming back to the shell terminal. The hints and the name of the flag itself is hinting at a command that has the word "net" in it. I used this information for the query below. 
+
+<img width="468" height="175" alt="image" src="https://github.com/user-attachments/assets/9d1b3ca1-6529-49ef-92e8-e91294cbf803" />
+
+To get the answer I just tried the different commands in the below CSV until I got to the correct one.
+
+Query Results:
+<img width="450" height="287" alt="4531C1D9-89C9-4D0C-95F8-96AC5E1CDE8E_4_5005_c" src="https://github.com/user-attachments/assets/3ded8402-e0a6-49a8-9b6d-8085b0017c16" />
+
+Ans: "net.exe" view /domain:nimbus
+
+# Flag 8: Mapping Before the Jump
+This flag wants me to see what they were doing in a two minute interval from the last command. I already knew which date to use in our query because the last csv results told me the date when the infiltrator used the net command. A hint further narrowed down my search from 1:18pm to 1:20pm. 
+
+Query Used:
+
+<img width="468" height="192" alt="image" src="https://github.com/user-attachments/assets/0a95934a-b05d-46f7-9d76-215b142c9acb" />
+
+Pasting the csv query results into ChatGPT gave me the following answer
+
+Ans: ARP enumeration and nslookup reconnaissance, RDP pivot to another host
+
+# Flag 9: Out of Role
 
 
