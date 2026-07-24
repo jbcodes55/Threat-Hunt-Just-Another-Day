@@ -145,4 +145,65 @@ After looking through the results I saw a file was renamed and modified under j.
 Ans: temp_payroll_review_jmorris_20260311.txt.txt
 
 # Flag 13:  The Second Target
+Unlocking the hints for this question helped a lot. The file that I'm looking for was in the Awards folder from this provided path "HR\2026-03\Awards". I used the following query and set the time range as custom:
 
+<img width="468" height="175" alt="image" src="https://github.com/user-attachments/assets/91a5a5e4-0589-4693-a2cf-0b3056ea5d34" />
+
+Query Results:
+
+<img width="1194" height="161" alt="93E1660C-83C5-4CD9-A54C-CDB1B45B3C9E_4_5005_c" src="https://github.com/user-attachments/assets/0f8f480b-b657-429d-848f-ba6f028a4156" />
+
+This query provides the correct answer however I changed the extension to .txt because it's been a common thing that the .lnk extension some of my queries give me is incorrect. I was right to do so.
+
+Ans: quarterly_awards_shortlist_20260310.txt
+
+# Flag 14: The Onward Hops
+Here the question is asking me to find the other devices where remote sessions were established by the infiltrator. Since we know that the infiltrator used a "RemoteInteractive" logontype from before and we know his IP address, I just needed to filter by distinct device names with the following query:
+
+Query Used:
+
+<img width="468" height="150" alt="image" src="https://github.com/user-attachments/assets/8de0d3df-6bcb-4944-aee1-0f1aeb207a64" />
+
+Query Results:
+
+<img width="264" height="124" alt="73917325-DBB5-477B-A70A-38F2E9172B72_4_5005_c" src="https://github.com/user-attachments/assets/053413b7-e47e-4af8-aabe-c0488dbc0391" />
+
+Ans: nh-wks-it-01, nh-fs-01
+
+# Flag 15: The Red Herring
+The question is asking to prove that one of the hops from the previous question is a red herring. 
+Just pasting the question into ChatGPT gave me the correct answer from the data it's received from previous queries, no extra query was needed for this question.
+
+Ans: Profile initialization only; no hands-on activity
+
+# Flag 16: Checking Their Rights
+
+This flag is asking me to find which command the account's operator used to find the privileges and groups they had. Using the information it already had and the extra hints, ChatGPT suggested the answer was whoami /groups  which was correct.
+
+Ans: whoami /groups 
+
+# Flag 17: What the Server Offered
+
+This question wants the command that was used right after the previous one to enumerate the file server. This flag hints at using a net command and after pasting the question into ChatGPT it gave me the correct answer.
+
+Ans: net share
+
+# Flag 18: Someone Else's Payroll
+
+HUNT LEAD: "The last thing they did on the file server was open a payroll review belonging to a different employee entirely. Name the file, and note whose it is."
+
+This was another question that was easily solvable thanks to it's hints. ChatGPT noted a filename in particular from my previous queries which resulted in the answer.
+
+Ans: payroll_review_dpatel_20260311.txt
+
+# Flag 19: What Else Left HR
+
+This flag wants me to explain the what was taken out of HR. Pasting the question into ChatGPT gave me the answer.
+
+Ans: Targeted multi-file HR collection spanning payroll and employee awards data
+
+# Flag 20: The Honest Read
+
+Now that there's evidence that this wasn't just a curious employee, this flag wants me to summarize why we know it was an outsider. ChatGPT gave me the answer.
+
+Ans: External compromise using valid credentials from outside the network; no malware or exploit artifacts, only native Windows tools. 
