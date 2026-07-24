@@ -96,4 +96,53 @@ Ans: ARP enumeration and nslookup reconnaissance, RDP pivot to another host
 
 # Flag 9: Out of Role
 
+After prompting ChatGPT on the question, it produced a similar query to the one above. One of the hints said the folder I'm looking for is in the "approval stage" which hinted at the correct answer after seeing the query results.
+
+<img width="468" height="192" alt="image" src="https://github.com/user-attachments/assets/d930d157-99f3-4b83-9b77-0a4af1a96eff" />
+
+Ans: Approved
+
+# Flag 10: The Invoice
+Here I had to find the invoice (filename) that the account handled in the approval folder. Based off my earlier findings, ChatGPT immediately recognized the correct filename and gave me the following query to use.
+
+
+<img width="468" height="192" alt="image" src="https://github.com/user-attachments/assets/25d80ac8-8663-47c0-82dc-792872040711" />
+
+Result:
+
+<img width="918" height="151" alt="3E077F1E-8766-47FA-9F05-E1DA8B1AD7D5_4_5005_c" src="https://github.com/user-attachments/assets/a2440fa2-e278-45f0-8731-1b079b211210" />
+
+Ans: approved_pending_invoice_INV-773221_20260311.txt
+
+# Flag 11: The Audit Trail
+
+The question says the infiltrator touched the audit trail, and to name the audit file that was assessed. So it was obvious that the query I needed to use should filter files that had the word "audit" in them. This is the query I used below
+
+Query Used:
+
+<img width="468" height="242" alt="image" src="https://github.com/user-attachments/assets/b2e7ae3f-5573-4759-be95-2cd2d6f10bcc" />
+
+After trying to submit the answer with the .csv extension, I tried with the .txt extension which was the right answer.
+
+Ans: review_audit_20260311.txt 
+
+# Flag 12: Staged Under Cover
+
+I prompted ChatGPT for this question and the hints the question provided allowed me to narrow down my search considerably. I'm looking for a file that was renamed to avoid suspision and placed in the billing folder. I tried this query but it didn't yield any results.
+
+<img width="468" height="101" alt="image" src="https://github.com/user-attachments/assets/29f33f26-8c85-45bb-a993-50e9dc1dbec1" />
+
+Then I tried just searching for the extension ".txt.txt" that one of the hints suggested and did the following query:
+
+<img width="468" height="117" alt="image" src="https://github.com/user-attachments/assets/bd70efd7-5c7d-44bd-81d9-fa8e0677b7f0" />
+
+Query Results:
+
+<img width="1104" height="342" alt="826BD646-21AC-4F92-AAAB-086A9FB13DA8_4_5005_c" src="https://github.com/user-attachments/assets/ec80cd91-12c3-4b29-b277-2f29936d2f70" />
+
+After looking through the results I saw a file was renamed and modified under j.morris in the billing folder which lead me to the answer.
+
+Ans: temp_payroll_review_jmorris_20260311.txt.txt
+
+# Flag 13:  The Second Target
 
